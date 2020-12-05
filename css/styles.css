@@ -62,7 +62,6 @@ img {
   margin: -1px;
   border: 0;
   padding: 0;
-
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
@@ -158,6 +157,8 @@ img {
 
 /*===============HERO============*/
 .hero {
+  max-width: 1600px;
+  margin: auto;
   background-color: var(--title-text-color);
 }
 
@@ -270,6 +271,8 @@ img {
 
 /*===============OUR TEAM============*/
 .team {
+  width: 1600px;
+  margin: auto;
   background-color: #f5f4fa;
 }
 .team .contener {
@@ -285,7 +288,7 @@ img {
   margin-right: 30px;
 }
 
-.team {
+.team-title {
   margin-bottom: 50px;
 
   font-weight: 700;
@@ -325,6 +328,8 @@ img {
 
 /*===============FOOTER============*/
 .footer {
+  width: 1600px;
+  margin: auto;
   background-color: var(--title-text-color);
 }
 .footer .contener {
