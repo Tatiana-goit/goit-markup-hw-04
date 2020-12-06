@@ -9,6 +9,7 @@
   --text-color: #757575;
   --accent-color: #2196f3;
   --white-color: #ffffff;
+  --social-link: #afb1b8;
   --main-font: "Roboto", sans-serif;
 }
 
@@ -81,14 +82,15 @@ img {
 
 /*===============HEADER============*/
 .header {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  /*padding-top: 32px;
+  padding-bottom: 32px;*/
   border-bottom: 1px solid #eeeeee;
 }
 
 .header .contener {
   display: flex;
   align-items: center;
+  height: 80px;
 }
 
 .navigation {
@@ -133,6 +135,7 @@ img {
 .address {
   margin-left: auto;
 }
+
 .address-list {
   display: flex;
 }
@@ -141,7 +144,17 @@ img {
   margin-right: 50px;
 }
 
+.address-list-mail-icon {
+  margin-right: 10px;
+
+  fill: var(--text-color);
+}
+
 .address-list-link {
+  display: flex;
+  align-items: center;
+  height: 40px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.143;
@@ -153,6 +166,16 @@ img {
 .address-list-link:focus {
   color: var(--accent-color);
 }
+
+.address-list-link:hover .address-list-mail-icon,
+.address-list-link:focus .address-list-mail-icon {
+  fill: var(--accent-color);
+}
+
+.address-list-mail-icon:hover,
+.address-list-mail-icon:focus {
+  fill: var(--accent-color);
+}
 /*===============END HEADER============*/
 
 /*===============HERO============*/
@@ -160,6 +183,12 @@ img {
   max-width: 1600px;
   margin: auto;
   background-color: var(--title-text-color);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/jpg/fon-hero.jpg");
+  background-repeat: no-repeat;
 }
 
 .hero .contener {
@@ -299,9 +328,15 @@ img {
   color: var(--title-text-color);
 }
 
+.team-list-item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
 .team-list-about {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px 32px;
+
   background-color: #ffffff;
 }
 
@@ -317,6 +352,8 @@ img {
 }
 
 .team-list-profession {
+  margin-bottom: 16px;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
@@ -324,17 +361,109 @@ img {
   letter-spacing: 0.03em;
   color: var(--text-color);
 }
+
+.social-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--accent-color);
+}
+
+.social-list-link:hover .social-list-icon {
+  fill: var(--white-color);
+}
+
+.social-list-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--social-link);
+}
 /*===============END OUR TEAM============*/
+
+/*===============CLIENTS============*/
+.clients .contener {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients-title {
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.667;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+
+.clients-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clients-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.clients-list-link:hover,
+.clients-list-link:focus {
+  border-color: var(--accent-color);
+}
+
+.clients-list-link:hover .client-list-icon,
+.clients-list-link:focus .client-list-icon {
+  fill: var(--accent-color);
+}
+
+.client-list-icon {
+  fill: #afb1b8;
+}
+
+/*===============END CLIENTS============*/
 
 /*===============FOOTER============*/
 .footer {
   width: 1600px;
   margin: auto;
-  background-color: var(--title-text-color);
+  background-color: #2f303a;
 }
 .footer .contener {
+  display: flex;
+  align-items: center;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.footer-left-side {
+  max-width: 231px;
+  margin-right: 70px;
+}
+
+.footer-right-side {
+  min-width: 206px;
+  height: 80px;
 }
 
 .footer .logo {
@@ -361,8 +490,31 @@ img {
   line-height: 1.714;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  background-color: var(--title-text-color);
 }
+
+.footer-right-side > p {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+.footer-right-side .social-list-link {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.footer-right-side .social-list-link:hover {
+  background: var(--accent-color);
+}
+
+.footer-right-side .social-list-icon {
+  fill: var(--white-color);
+}
+
 /*===============END FOOTER============*/
 
 /*===============PORTFOLIO============*/

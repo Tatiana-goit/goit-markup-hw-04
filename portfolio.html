@@ -30,10 +30,21 @@
             <address class="address">
                 <ul class="address-list">
                     <li class="address-list-item">
-                        <a class="address-list-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        <a class="address-list-link" href="mailto:info@devstudio.com">
+                            <svg width="16px" height="12px" class="address-list-mail-icon">
+                                <use href="./images/sprite.svg#envelope">
+                                </use>
+                            </svg>
+                            info@devstudio.com
+                        </a>
                     </li>
                     <li class="address-list-item">
-                        <a class="address-list-link" href="tel:+380961111111">+38 096 111 11 11</a>
+                        <a class="address-list-link" href="tel:+380961111111">
+                            <svg width="10px" height="16px" class="address-list-mail-icon">
+                                <use href="./images/sprite.svg#smartphone">
+                                </use>
+                            </svg>
+                            +38 096 111 11 11</a>
                     </li>
                 </ul>
             </address>
@@ -188,11 +199,12 @@
         </section>
     </main>
 
-    <footer class="footer">
-        <!--CONTACT INFORMATION-->
-        <div class="contener">
+<footer class="footer">
+    <!--CONTACT INFORMATION-->
+    <div class="contener">
+        <div class="footer-left-side">
             <h2 class="visually-hidden">Контакты</h2>
-            <a class="logo" href="#" lang="en"><span class="logo-first">Web</span>Studio </a>
+            <a class="logo" href="./index.html" lang="en"><span class="logo-first">Web</span>Studio </a>
             <address class="contact">
                 <ul class="contact-list">
                     <li class="contact-list-item">
@@ -209,6 +221,47 @@
                 </ul>
             </address>
         </div>
-    </footer>
+        <div class="footer-right-side">
+            <p>Присоединяйтесь</p>
+            <ul class="social-list">
+                <li class="social-list-item">
+                    <a class="social-list-link" href="">
+                        <svg class="social-list-icon">
+                            <use href="./images/sprite.svg#instagram">
+                            </use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social-list-item">
+                    <a class="social-list-link" href="">
+                        <svg class="social-list-icon">
+                            <use href="./images/sprite.svg#twitter">
+                            </use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social-list-item">
+                    <a class="social-list-link" href="">
+                        <svg class="social-list-icon">
+                            <use href="./images/sprite.svg#facebook">
+                            </use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social-list-item">
+                    <a class="social-list-link" href="">
+                        <svg class="social-list-icon">
+                            <use href="./images/sprite.svg#linkedin">
+                            </use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+
+
+        </div>
+
+    </div>
+</footer>
 </body>
 </html>
