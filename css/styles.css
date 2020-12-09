@@ -82,8 +82,6 @@ img {
 
 /*===============HEADER============*/
 .header {
-  /*padding-top: 32px;
-  padding-bottom: 32px;*/
   border-bottom: 1px solid #eeeeee;
 }
 
@@ -323,7 +321,6 @@ img {
 
 /*===============OUR TEAM============*/
 .team {
-  width: 1600px;
   margin: auto;
   background-color: #f5f4fa;
 }
@@ -398,7 +395,8 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: var(--white-color);
+  color: var(--white-color);
 }
 
 .social-list-link:hover,
@@ -406,8 +404,9 @@ img {
   background-color: var(--accent-color);
 }
 
-.social-list-link:hover .social-list-icon {
-  fill: var(--white-color);
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon {
+  fill: currentColor;
 }
 
 .social-list-icon {
@@ -468,13 +467,12 @@ img {
 
 /*===============FOOTER============*/
 .footer {
-  width: 1600px;
   margin: auto;
   background-color: #2f303a;
 }
 .footer .contener {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -530,7 +528,8 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.footer-right-side .social-list-link:hover {
+.footer-right-side .social-list-link:hover,
+.footer-right-side .social-list-link:focus {
   background: var(--accent-color);
 }
 
